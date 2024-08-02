@@ -1,14 +1,15 @@
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Servico {
-    private Date data;
+    private LocalDate data;
     private double preco;
-    private Cliente cliente;
-    private Funcionario funcionario;
+    private Pessoa cliente;
+    private Pessoa funcionario;
     private Automovel automovel;
 
 
-    public Servico(Date data, double preco, Cliente cliente, Funcionario funcionario, Automovel automovel){
+    public Servico(LocalDate data, double preco, Pessoa cliente, Pessoa funcionario, Automovel automovel){
         this.data = data;
         this.preco = preco;
         this.cliente = cliente;

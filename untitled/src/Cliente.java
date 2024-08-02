@@ -12,4 +12,9 @@ public class Cliente extends Pessoa{
         automoveis.add(automovel);
     }
 
+
+    public ArrayList<Automovel> getAutomoveis(){
+        return automoveis;
+    }
+
 }

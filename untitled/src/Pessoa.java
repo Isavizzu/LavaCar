@@ -1,4 +1,6 @@
-public class Pessoa {
+import java.util.ArrayList;
+
+public abstract class Pessoa {
     private String nome;
     private String cpf;
     private String telefone;
@@ -12,5 +14,17 @@ public class Pessoa {
     public String getNome(){
         return nome;
     }
+
+
+    public String getCpf(){
+        return cpf;
+    }
+
+
+    public abstract ArrayList<Automovel> getAutomoveis();
+
+
+
+        public abstract void registrarAutomvel(Automovel automovel);
 
 }
