@@ -9,4 +9,10 @@ public class Impressao {
         }
         imprimir(linha);
     }
+
+    public int pergtInt(String pergt){
+        imprimir(pergt);
+        Scanner Scanner = new Scanner(System.in);
+        return nextInt();
+    }
 }

@@ -5,13 +5,21 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<String> opts = new ArrayList<String>();
-        opts.add("")
+        static String[] menu = new String[4];
+        menu[0] = "1-Cadastrar funcionário";
+        menu[1] = "2-Cadastrar cliente";
+        menu[2] = "3-Cadastrar automovel";
+        menu[3] = "4-Registrar serviço";
+
+
         Impressao i = new Impressao();
         i.imprimir("Bem-Vindo ao Sistema");
         i.imprimirLinha(30);
         while (true){
-            i.imprimir();
+            for (String opt:menu){
+                i.imprimir(opt);
+            }
+        int resp = i.pergtInt("Digite a opção: ");
         }
     }
 }
