@@ -13,8 +13,4 @@ public class Pessoa {
         return nome;
     }
 
-    public String cadastrarPessoa(String nome, String cpf, String telefone){
-        Pessoa  = super(nome, cpf, telefone);
-        return "Novo(a) Cliente " + automovel.getPlaca() + " cadastrado!";
-    }
 }

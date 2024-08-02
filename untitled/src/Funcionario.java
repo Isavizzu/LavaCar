@@ -25,8 +25,10 @@ public class Funcionario extends Pessoa{
     }
 
 
-    public String cadastrarPessoa(String nome, String cpf, String telefone){
-        Pessoa cliente = super(nome, cpf, telefone);
-        return "Novo(a) Cliente " + automovel.getPlaca() + " cadastrado!";
+    public Pessoa cadastrarPessoa(String nome, String cpf, String telefone, String cargo, int opt){
+        if (opt == 1){
+            return new Cliente(nome, cpf, telefone);
+        }
+        return new Funcionario(nome, cpf, telefone, cargo);
     }
 }
